@@ -1,6 +1,6 @@
 ---
-title: '静的ジェネレーションとSSRの違い'
-date: '2020-07-02'
+title: 'React入門してみた'
+date: '2022-03-17'
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
