@@ -1,5 +1,5 @@
 ---
-title: 'Next.js習得への道'
+title: 'Next.js勉強開始'
 date: '2022-03-18'
 ---
 

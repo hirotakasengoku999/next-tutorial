@@ -1,19 +1,21 @@
 ---
-title: 'React入門してみた'
-date: '2022-03-17'
+title: 'アウトプット作成'
+date: '2022-10-08'
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+DjangoRestFrameworkとNext.jsの勉強アウトプットとしてシンプルなレセプト電算コード検索アプリを作成してみました。
 
-You can use Static Generation for many types of pages, including:
+機能:
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+- ９桁のレセプト電算コードを入力して検索ボタンをクリック
+- 診療行為名称、フリガナ、点数、入外区分、カテゴリーが表示される
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+使用技術:
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+- DjangoRestFramework : ObjectMultipleModelAPIView, ModelViewSet, APIView
+- Next.js : useSWR, ISR, SSG
+- React: useState, useEffect
+- Tailwindcss, flowbire
 
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+URL
+<https://receipt-search-next-front.vercel.app/receipt-search>
